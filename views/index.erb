@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+  <title>
+    David's History Website
+  </title>
+  <link rel="stylesheet" type="text/class" href="css/style.css">
+</head>
+
+
+<body>
+
+<h1>David's History Website</h1>
+
+<h3>Today is the <i><u> <%=Time.now.strftime("%d")%> of <%=Time.now.strftime("%B")%> </u></i> </h3>
+
+<a href= @history.random_event> Click here for a random event </a>
+
+<%= @history.all_events %>
+
+</body>
