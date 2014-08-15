@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -10,7 +11,7 @@
 
 <body>
 
-<h1>David's History Website</h1>
+<h1> <a href="/">David's History Website</a> </h1>
 
 <h3>Today is the <i><u> <%=Time.now.strftime("%d")%> of <%=Time.now.strftime("%B")%> </u></i> </h3>
 
@@ -19,8 +20,6 @@
 <br>
 <br>
 
-<a href="/random_event"> Click here for a random event </a>
-
-<%= @history.all_events %>
+<%= @history.random_event %>
 
 </body>

@@ -20,7 +20,7 @@ class History
 
   def random_event
     random_event = event_and_year_hash.to_a.sample
-    "your random event: #{random_event[0]} - #{random_event[1]} "
+    "Random event: #{random_event[0]} - #{random_event[1]} "
   end
 
    def all_events

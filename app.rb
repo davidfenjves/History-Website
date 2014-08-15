@@ -8,3 +8,8 @@ get '/' do
   erb :index
 end
 
+get '/random_event' do
+  @history = History.new
+  erb :random 
+end
+
